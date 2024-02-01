@@ -1,1 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    background: gray;
+    padding: 40px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+
+}
