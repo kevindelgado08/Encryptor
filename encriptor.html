@@ -6,6 +6,9 @@
         <title>Encriptador</title>
         <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;wght@700&display=swap" rel="stylesheet">
 
     </head>
 
@@ -24,18 +27,21 @@
 
                     <div class="izq_footer">
                         <img src="./img/bi_exclamation-circle-fill.png" alt="">
-                        <p>Solo letras minúsculas y sin acentos</p>
-                        <button onclick="encriptar()"> Encriptar </button>
-                        <button onclick="desencriptar()"> Desencriptar </button>
+                        <span class="mensaje_alerta">Solo letras minúsculas y sin acentos</span>
+                        <div class="izq_botones">
+                            <button class="izq_encriptar"> Encriptar </button>
+                            <button class="izq_desencriptar"> Desencriptar </button>
+                        </div>
+                        
                     </div>
                     
                 </div>
     
                 <div class="der">
-                    <img src="./img/muneco.png" alt="">
-                    <p>Ningún mensaje fue encontrado</p>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <button>Copiar</button>
+                    <img class="muneco" src="./img/muneco.png" alt="">
+                    <p class="mensaje_1">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="boton_copiar oculto">Copiar</button>
                 </div>
 
             </div>
@@ -44,6 +50,7 @@
 
         <footer>
             <p class="copyright">Desarrollado por Kevin Delgado Rojas, San José, Costa Rica - 2024</p>
+            
         </footer>
         
     </body>

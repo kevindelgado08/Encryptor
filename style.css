@@ -1,16 +1,15 @@
 body{
     background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+textarea{
+    font-family: 'Inter', sans-serif;
 }
 
 /*Header*/
 
-header{
-    background-color: antiquewhite;
-    
-}
 
 .header{
-    background-color: aqua;
     width: 90%;
     margin: auto;
 }
@@ -21,7 +20,6 @@ header{
 
 /*Main*/
 .main{
-    background-color: red;
     width: 80.5%;
     margin: auto 40px auto auto;
     display: grid;
@@ -31,7 +29,6 @@ header{
 }
 
 .izq {
-    background-color: blueviolet;
     height: 85%;
     display: flex;
     flex-direction: column;
@@ -53,21 +50,137 @@ header{
     color: #0A3871;
 }
 
-.der {
-    background-color: blue;
-    height: calc(100% + 48px);
+/* .izq_footer{
+    
+} */
+
+.mensaje_alerta{
+    font-size: 12px;
+    color: #495057;
 }
 
-.copyright{
-    background-color: bisque;
+.izq_botones{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.izq_encriptar,
+.izq_desencriptar,
+.boton_copiar {
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.izq_encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
+.izq_desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.der {
+    background-color: #FFFFFF;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+.der.ajustar{
+    justify-content: space-between;
+}
+
+.muneco{
+    width: 100%;
+}
+
+.mensaje_1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #343A40;
     text-align: center;
 }
 
-/*Footer*/
+.mensaje_1.ajustar{
+    height: 70%;
 
-@media screen and (max-width: 770px){
+}
+
+.mensaje_2{
+    font-size: 16px;
+    color: #495057;
+    text-align: center;
+}
+
+.boton_copiar{
+    width: 100%;
+    background-color: transparent;
+    color: #0A3871;
+}
+
+.oculto{
+    display: none;
+}
+
+.copyright{
+    padding: 30px;
+    text-align: center;
+    color: #495057;
+}
+
+
+@media screen and (max-width: 800px){
     .main{
         grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+    }
+
+    .der{
+        height: 100%;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .izq_botones{
+        justify-content: center;
+    }
+    .izq_encriptar,
+    .izq_desencriptar{
+        width: 45%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .main{
+        margin: auto 16px;
+    }
+
+    .izq_encriptar,
+    .izq_desencriptar{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 
