@@ -23,14 +23,14 @@
         <main>
             <div class="main">
                 <div class="izq">
-                    <textarea class="ingrese_texto" placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea id="ingresoTexto" class="ingrese_texto" placeholder="Ingrese el texto aquí"></textarea>
 
                     <div class="izq_footer">
                         <img src="./img/bi_exclamation-circle-fill.png" alt="">
                         <span class="mensaje_alerta">Solo letras minúsculas y sin acentos</span>
                         <div class="izq_botones">
-                            <button class="izq_encriptar"> Encriptar </button>
-                            <button class="izq_desencriptar"> Desencriptar </button>
+                            <button id="botonEncriptar" class="izq_encriptar"> Encriptar </button>
+                            <button id="botonDesencriptar" class="izq_desencriptar"> Desencriptar </button>
                         </div>
                         
                     </div>
@@ -39,9 +39,9 @@
     
                 <div class="der">
                     <img class="muneco" src="./img/muneco.png" alt="">
-                    <p class="mensaje_1">Ningún mensaje fue encontrado</p>
+                    <p id="mensaje1" class="mensaje_1">Ningún mensaje fue encontrado</p>
                     <p class="mensaje_2">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <button class="boton_copiar oculto">Copiar</button>
+                    <button id="botonCopiar" class="boton_copiar oculto">Copiar</button>
                 </div>
 
             </div>
